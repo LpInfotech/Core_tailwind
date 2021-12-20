@@ -2,7 +2,7 @@ module.exports = (nano) => ({
   plugins: {
     "postcss-import": {},
     "tailwindcss/nesting": {},
-    "tailwindcss": {config: './tailwindcss-config.js'},
+    "tailwindcss": {},
     "autoprefixer": {},
     cssnano: nano.env === 'production' ? {} : false,
   },
