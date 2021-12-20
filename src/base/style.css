@@ -1,0 +1,37 @@
+/* ========= core style sheet ============== */
+
+/* ========= import base files and custom style ============== */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+/* @import "./custom.css"; */
+
+/* ========== base style =============== */
+@layer base {
+
+/* ========= variables ============ */
+
+    :root {
+        --orange-color: #FE8464;
+        --gray-color: #646F87;
+        --black-color: #293651;
+        --font-family-open-sans: "Open Sans", sans-serif;
+        --font-family-montserrat-sans: "Montserrat", sans-serif;
+        --btn-color: linear-gradient(to right, #fe8464 0%, #fe6e9a 50%, #fe8464 100%);
+        --outline-btn-color: rgba(100, 111, 135, 0.4);
+    }
+/* 
+    h1 {
+        @apply text-4xl;
+    }
+
+    h2 {
+        @apply text-xl;
+    } */
+
+    h3 {
+        /* @apply text-xl;//44px  25px 22px 25px*/
+    }
+
+    /* ... */
+}
