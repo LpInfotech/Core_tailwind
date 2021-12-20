@@ -1,5 +1,8 @@
 /* ========= core style sheet ============== */
 
+/*=========== Font faimly ================== */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Open+Sans:400,600,700&display=swap");
+
 /* ========= import base files and custom style ============== */
 @import "tailwindcss/base";
 @import "tailwindcss/components";
@@ -9,7 +12,7 @@
 /* ========== base style =============== */
 @layer base {
 
-/* ========= variables ============ */
+    /* ========= variables ============ */
 
     :root {
         --orange-color: #FE8464;
@@ -20,18 +23,11 @@
         --btn-color: linear-gradient(to right, #fe8464 0%, #fe6e9a 50%, #fe8464 100%);
         --outline-btn-color: rgba(100, 111, 135, 0.4);
     }
-/* 
-    h1 {
-        @apply text-4xl;
+
+    body{
+        color:var(--gray-color);
     }
 
-    h2 {
-        @apply text-xl;
-    } */
 
-    h3 {
-        /* @apply text-xl;//44px  25px 22px 25px*/
-    }
 
-    /* ... */
 }

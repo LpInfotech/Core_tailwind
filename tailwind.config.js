@@ -1,12 +1,26 @@
 const plugin = require('tailwindcss/plugin')
 module.exports = {
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'sans': ['"Open Sans", sans-serif'],
+        montserrat: '"Montserrat", sans-serif',
+      }
+    },
     fontSize: {
+      'xs': '.75rem',
+      'sm': '.875rem',
+      'tiny': '.875rem',
+      'base': '1rem',
       'lg': '1.125rem',
-      'xl': '1.25rem',
+      'xl': '1.375rem',
+      '2xl': '1.563rem',
+      '3xl': '1.875rem',
+      '4xl': '2.188rem',
+      '5xl': '2.5rem',
+      '6xl': '4rem',
       '7xl': '5rem',
-    }
+    },
 
   },
   purge:{
