@@ -7,9 +7,10 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
-/* @import "./custom.css"; */
+
 
 /* ========== base style =============== */
+
 @layer base {
 
     /* ========= variables ============ */
@@ -31,3 +32,4 @@
 
 
 }
+
