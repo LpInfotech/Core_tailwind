@@ -315,32 +315,49 @@ Ensure the default browser behavior of the `hidden` attribute.
 [hidden] {
   display: none;
 }
-h1{
-  font-size: 5rem;
-}
-h2{
-  font-size: 1.375rem;
-}
-h3{}
 /* ========= variables ============ */
 :root {
-        --orange-color: #FE8464;
+        --faded-orange-color: #FE8464;
         --gray-color: #646F87;
         --black-color: #293651;
         --font-family-open-sans: "Open Sans", sans-serif;
         --font-family-montserrat-sans: "Montserrat", sans-serif;
         --btn-color: linear-gradient(to right, #fe8464 0%, #fe6e9a 50%, #fe8464 100%);
         --outline-btn-color: rgba(100, 111, 135, 0.4);
+        --box-shodow-xsm:0px 3px 6px 0px rgb(112 112 112 / 44%);
+        --box-shadow-sm:0px 3px 26px 0px rgb(112 112 112 / 34%);
+        --box-shadow-lg:rgba(100, 111, 135, 0.4);
+        --box-shadow-xlg:0px 5px 26px 0px rgb(100 111 135 / 30%);
     }
 body{
         color:var(--gray-color);
+        font-size: 1rem;
+        line-height: 1.5rem;
+        font-weight: 400;
     }
-.btn-red{
-  background-color: #e3342f;
-  color: #fff;
+h1{
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
-.btn-red:hover{
-  background-color: #cc1f1a;
+h2{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+h3{
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+h4{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+h5{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+h6{
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 .font-montserrat{
   font-family: "Montserrat", sans-serif;

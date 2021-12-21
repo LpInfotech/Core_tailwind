@@ -16,20 +16,47 @@
     /* ========= variables ============ */
 
     :root {
-        --orange-color: #FE8464;
+        --faded-orange-color: #FE8464;
         --gray-color: #646F87;
         --black-color: #293651;
         --font-family-open-sans: "Open Sans", sans-serif;
         --font-family-montserrat-sans: "Montserrat", sans-serif;
         --btn-color: linear-gradient(to right, #fe8464 0%, #fe6e9a 50%, #fe8464 100%);
         --outline-btn-color: rgba(100, 111, 135, 0.4);
+        --box-shodow-xsm:0px 3px 6px 0px rgb(112 112 112 / 44%);
+        --box-shadow-sm:0px 3px 26px 0px rgb(112 112 112 / 34%);
+        --box-shadow-lg:rgba(100, 111, 135, 0.4);
+        --box-shadow-xlg:0px 5px 26px 0px rgb(100 111 135 / 30%);
     }
 
     body{
         color:var(--gray-color);
+        @apply text-base font-normal;
     }
 
+    h1{
+    @apply text-4xl;
+    }
 
+    h2{
+    @apply text-3xl;
+    }
+
+    h3{
+    @apply text-2xl;
+    }
+
+    h4{
+    @apply text-xl;
+    }
+
+    h5{
+    @apply text-lg;
+    }
+
+    h6{
+    @apply text-base;
+    }
 
 }
 
