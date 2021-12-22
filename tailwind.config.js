@@ -4,9 +4,12 @@ module.exports = {
       fontFamily: {
         'sans': '"Open Sans", sans-serif',
         montserrat: '"Montserrat", sans-serif',
+      },
+      fontSize: {
+        'h1':'text-4xl',
       }
     },
   },
-  content: ["./assets/**/*.html"],
+  content: ["./assets/**/*.{html,js}"],
   plugins: [],
 }
