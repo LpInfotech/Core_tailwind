@@ -16,14 +16,14 @@
 
 <body>
     <!--header-->
-    <header class="bg-slate-100 flex flex-wrap items-center justify-center w-full fixed">
-        <nav class="container mx-auto py-6 lg:py-0 lg:flex items-center relative">
+    <header class="flex flex-wrap items-center justify-center w-full fixed">
+        <nav class="container py-6 lg:py-0 flex justify-between items-center relative">
             <!-- navbar logo-->
-            <a href="./index.html"><img src="./images/logo.png" /></a>
+            <a href="./index.html"><img src="./images/logo.png"/></a>
             <!-- /navbar logo-->
-            <div class="absolute top-full lg:static w-full left-0">
+            <div class="absolute top-full lg:static w-full lg:w-auto left-0 container lg:ml-auto">
                 <!-- nav links-->
-                <ul class="lg:flex ml-auto items-center bg-slate-400 lg:bg-transparent">
+                <ul class="bg-slate-400 lg:bg-transparent lg:flex items-center px-3">
                     <li class="lg:mr-5"><a href="#" class="lg:p-6 py-1 block">Home</a></li>
                     <li class="lg:mr-5"><a href="#" class="lg:p-6 py-1 block">About</a></li>
                     <li class="lg:mr-5"><a href="#" class="lg:p-6 py-1 block">Services</a></li>
@@ -34,6 +34,9 @@
                 </ul>
                 <!-- /navbar links-->
             </div>
+            <!--quote button-->
+            <a href="#" class="text-white px-6 py-3 text-center bg-relay transition-all rounded-full inline-block shadow-dark hover:bg-right-center hover:shadow-light">Free quote</a>
+            <!--quote button-->
         </nav>
     </header>
     <!--/header-->
