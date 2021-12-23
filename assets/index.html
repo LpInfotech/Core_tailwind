@@ -16,40 +16,41 @@
 
 <body>
     <!--header-->
-    <header class="flex flex-wrap items-center justify-center w-full fixed" id="headstick">
+    <header class="flex flex-wrap items-center justify-center w-full fixed transition-all" id="headstick">
         <!--nav container-->
         <nav class="container">
             <div class="relative py-6 lg:py-0 flex justify-between items-center">
-            <!-- navbar logo-->
-            <a href="./index.html"><img src="./images/logo.png" /></a>
-            <!-- /navbar logo-->
-            <!--toggler button-->
-            <button class="order-1 lg:hidden navbar-toggler" type="button">
-                <span class="h-0.5 block bg-black w-8 my-1 relative transition-all duration-500"></span>
-                <span class="h-0.5 block bg-black w-8 my-1"></span>
-                <span class="h-0.5 block bg-black w-8 my-1 relative transition-all duration-500"></span>
-            </button>
-            <!--/toggler button-->
-            <div class="absolute top-full lg:static w-full lg:w-auto left-0 hidden lg:block lg:ml-auto dropdown-menu transition-all duration-2000">
-                <!-- nav links-->
-                <ul class="bg-slate-400 lg:bg-transparent lg:flex items-center px-3">
-                    <li class="lg:mr-5"><a href="#" class="lg:p-6 py-1 block capitalize">Home</a></li>
-                    <li class="lg:mr-5"><a href="#" class="lg:p-6 py-1 block capitalize">About</a></li>
-                    <li class="lg:mr-5"><a href="#" class="lg:p-6 py-1 block capitalize">Services</a></li>
-                    <li class="lg:mr-5"><a href="#" class="lg:p-6 py-1 block capitalize">Pricing</a></li>
-                    <li class="lg:mr-5"><a href="#" class="lg:p-6 py-1 block capitalize">Clients</a></li>
-                    <li class="lg:mr-5"><a href="#" class="lg:p-6 py-1 block capitalize">Blog</a></li>
-                    <li class="lg:mr-5"><a href="#" class="lg:p-6 py-1 block capitalize">Contacts</a></li>
-                </ul>
-                <!-- /navbar links-->
-            </div>
-            <!--quote button-->
-            <div class="ml-auto mr-5 lg:mr-0 lg:ml-0">
-                <a href="#"
-                    class="text-white capitalize px-6 py-3 text-center bg-ruby-red whitespace-nowrap transition-all rounded-full hover:bg-dark-grey shadow-xl hover:shadow-inherit">Free
-                    quote</a>
-            </div>
-            <!--quote button-->
+                <!-- navbar logo-->
+                <a href="./index.html"><img src="./images/logo.png" /></a>
+                <!-- /navbar logo-->
+                <!--toggler button-->
+                <button class="order-1 lg:hidden navbar-toggler" type="button">
+                    <span class="h-0.5 block bg-black w-8 my-1 relative transition-all duration-500"></span>
+                    <span class="h-0.5 block bg-black w-8 my-1"></span>
+                    <span class="h-0.5 block bg-black w-8 my-1 relative transition-all duration-500"></span>
+                </button>
+                <!--/toggler button-->
+                <div
+                    class="absolute top-full lg:static w-full lg:w-auto left-0 hidden lg:block lg:ml-auto dropdown-menu">
+                    <!-- nav links-->
+                    <ul class="shadow-lg lg:shadow-none bg-white lg:bg-transparent lg:flex items-center px-3 lg:px-0">
+                        <li class="lg:mr-5"><a href="#" class="lg:p-6 py-1 block capitalize">Home</a></li>
+                        <li class="lg:mr-5"><a href="#" class="lg:p-6 py-1 block capitalize">About</a></li>
+                        <li class="lg:mr-5"><a href="#" class="lg:p-6 py-1 block capitalize">Services</a></li>
+                        <li class="lg:mr-5"><a href="#" class="lg:p-6 py-1 block capitalize">Pricing</a></li>
+                        <li class="lg:mr-5"><a href="#" class="lg:p-6 py-1 block capitalize">Clients</a></li>
+                        <li class="lg:mr-5"><a href="#" class="lg:p-6 py-1 block capitalize">Blog</a></li>
+                        <li class="lg:mr-5"><a href="#" class="lg:p-6 py-1 block capitalize">Contacts</a></li>
+                    </ul>
+                    <!-- /navbar links-->
+                </div>
+                <!--quote button-->
+                <div class="ml-auto mr-5 lg:mr-0 lg:ml-0">
+                    <a href="#"
+                        class="text-white capitalize px-6 py-3 text-center bg-ruby-red whitespace-nowrap transition-all rounded-full hover:bg-dark-grey shadow-xl hover:shadow-inherit">Free
+                        quote</a>
+                </div>
+                <!--quote button-->
             </div>
         </nav>
         <!--/nav container-->
@@ -57,7 +58,32 @@
     <!--/header-->
     <!--main-->
     <main>
-
+        <!--launch website-->
+        <section id="launchWebsite" class="container mx-auto">
+            <!--row-->
+            <div class="flex flex-wrap w-full">
+                <!--col-->
+                <div class="w-6/12 mt-64">
+                    <h1 class="text-4xl wow fadeInUp mb-8">It's Time To Launch Your <span
+                            class="block font-bold">Business Website</span>
+                    </h1>
+                    <p class="wow fadeInUp mb-8">Comes with all essential elements, features and sections for business
+                        websites, you need to launch a complete business or startup website.</p>
+                    <a href="#"
+                        class="text-white capitalize px-6 py-3 text-center bg-ruby-red whitespace-nowrap transition-all rounded-full hover:bg-dark-grey shadow-xl hover:shadow-inherit">Free
+                        quote</a>
+                </div>
+                <!--/col-->
+                <!--col-->
+                <div class="w-6/12">
+                    <div class="bg-[url('./images/header-shape.svg')]"></div>
+                <img src="./images/banner.svg"/>
+                </div>
+                <!--/col-->
+            </div>
+            <!--row-->
+        </section>
+        <!--/launch website-->
     </main>
     <!--/main-->
     <!--footer-->

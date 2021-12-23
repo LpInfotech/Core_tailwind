@@ -21,6 +21,9 @@ module.exports = {
         padding: {
           DEFAULT: '1rem',
         },
+        margin: {
+          DEFAULT: 'auto',
+        }
       },
     },
 
