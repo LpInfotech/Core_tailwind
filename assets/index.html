@@ -16,28 +16,43 @@
 
 <body>
     <!--header-->
-    <header class="flex flex-wrap items-center justify-center w-full fixed">
-        <nav class="container py-6 lg:py-0 flex justify-between items-center relative">
+    <header class="flex flex-wrap items-center justify-center w-full fixed" id="headstick">
+        <!--nav container-->
+        <nav class="container">
+            <div class="relative py-6 lg:py-0 flex justify-between items-center">
             <!-- navbar logo-->
-            <a href="./index.html"><img src="./images/logo.png"/></a>
+            <a href="./index.html"><img src="./images/logo.png" /></a>
             <!-- /navbar logo-->
-            <div class="absolute top-full lg:static w-full lg:w-auto left-0 container lg:ml-auto">
+            <!--toggler button-->
+            <button class="order-1 lg:hidden navbar-toggler" type="button">
+                <span class="h-0.5 block bg-black w-8 my-1 relative transition-all duration-500"></span>
+                <span class="h-0.5 block bg-black w-8 my-1"></span>
+                <span class="h-0.5 block bg-black w-8 my-1 relative transition-all duration-500"></span>
+            </button>
+            <!--/toggler button-->
+            <div class="absolute top-full lg:static w-full lg:w-auto left-0 hidden lg:block lg:ml-auto dropdown-menu transition-all duration-2000">
                 <!-- nav links-->
                 <ul class="bg-slate-400 lg:bg-transparent lg:flex items-center px-3">
-                    <li class="lg:mr-5"><a href="#" class="lg:p-6 py-1 block">Home</a></li>
-                    <li class="lg:mr-5"><a href="#" class="lg:p-6 py-1 block">About</a></li>
-                    <li class="lg:mr-5"><a href="#" class="lg:p-6 py-1 block">Services</a></li>
-                    <li class="lg:mr-5"><a href="#" class="lg:p-6 py-1 block">Pricing</a></li>
-                    <li class="lg:mr-5"><a href="#" class="lg:p-6 py-1 block">Clients</a></li>
-                    <li class="lg:mr-5"><a href="#" class="lg:p-6 py-1 block">Blog</a></li>
-                    <li class="lg:mr-5"><a href="#" class="lg:p-6 py-1 block">Contacts</a></li>
+                    <li class="lg:mr-5"><a href="#" class="lg:p-6 py-1 block capitalize">Home</a></li>
+                    <li class="lg:mr-5"><a href="#" class="lg:p-6 py-1 block capitalize">About</a></li>
+                    <li class="lg:mr-5"><a href="#" class="lg:p-6 py-1 block capitalize">Services</a></li>
+                    <li class="lg:mr-5"><a href="#" class="lg:p-6 py-1 block capitalize">Pricing</a></li>
+                    <li class="lg:mr-5"><a href="#" class="lg:p-6 py-1 block capitalize">Clients</a></li>
+                    <li class="lg:mr-5"><a href="#" class="lg:p-6 py-1 block capitalize">Blog</a></li>
+                    <li class="lg:mr-5"><a href="#" class="lg:p-6 py-1 block capitalize">Contacts</a></li>
                 </ul>
                 <!-- /navbar links-->
             </div>
             <!--quote button-->
-            <a href="#" class="text-white px-6 py-3 text-center bg-relay transition-all rounded-full inline-block shadow-dark hover:bg-right-center hover:shadow-light">Free quote</a>
+            <div class="ml-auto mr-5 lg:mr-0 lg:ml-0">
+                <a href="#"
+                    class="text-white capitalize px-6 py-3 text-center bg-ruby-red whitespace-nowrap transition-all rounded-full hover:bg-dark-grey shadow-xl hover:shadow-inherit">Free
+                    quote</a>
+            </div>
             <!--quote button-->
+            </div>
         </nav>
+        <!--/nav container-->
     </header>
     <!--/header-->
     <!--main-->

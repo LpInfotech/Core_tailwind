@@ -1,3 +1,48 @@
+/*==================================================== */
+    /* ========= core js ============== */
+/*==================================================== */
+
+//#region 
+
+//====== navbar toggler
+
+const navbarToggler = document.querySelector("#headstick .navbar-toggler");
+const dropdownMenu = document.querySelector("#headstick .dropdown-menu");
+
+navbarToggler.addEventListener("click", function(){  
+if(dropdownMenu.classList.contains("hidden")){
+    // === remove hidden class
+    dropdownMenu.classList.remove("hidden");
+    // === for toggler lines
+    navbarToggler.children[1].style.display = "none"; 
+    this.children[2].style.cssText =`transform:rotate(132deg); top:-3px;`;
+    this.children[0].style.cssText =`transform:rotate(49deg); top:3px;`;
+    // === dropdown menu height
+   dropdownMenu.style.height = "auto";
+    let heights = dropdownMenu.clientHeight + "px";
+    dropdownMenu.style.height = "0px";
+    setTimeout(() => {
+        dropdownMenu.style.height = heights;
+    }, 0) 
+}else{
+        // === add hidden class
+    dropdownMenu.classList.add("hidden");
+     // === for toggler lines
+    navbarToggler.children[1].style.display = "block"; 
+    this.children[2].style.cssText =`transform:rotate(0deg); top:0px;`;
+    this.children[0].style.cssText =`transform:rotate(0deg); top:0px;`;
+    dropdownMenu.style.height="0px";
+}  
+});
+
+
+
+//#endregion 
+
+
+
+
+
 
 //jQuery for page scrolling feature - requires jQuery Easing plugin
 $(function() {
@@ -17,6 +62,3 @@ $(function() {
 
 });
 
-$(document).ready(function(){
-    console.log("test");
-})

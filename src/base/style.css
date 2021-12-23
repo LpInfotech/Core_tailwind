@@ -1,4 +1,6 @@
-/* ========= core style sheet ============== */
+/*==================================================== */
+    /* ========= core style sheet ============== */
+/*==================================================== */
 
 /*=========== Font faimly ================== */
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Open+Sans:400,600,700&display=swap");
@@ -13,15 +15,16 @@
 
 @layer base {
 
-    /* ========= variables ============ */
+/* =============== variables ============== */
 
     :root {
         --faded-orange-color: #FE8464;
-        --gray-color: #646F87;
+        --grey-color: #646F87;
         --black-color: #293651;
+        --ruby-red-color: #ed1c24;
+        --dark-grey-color: #333333;
         --font-family-open-sans: "Open Sans", sans-serif;
         --font-family-montserrat-sans: "Montserrat", sans-serif;
-        --orage-linear-color: linear-gradient(to right, #fe8464 0%, #fe6e9a 50%, #fe8464 100%);
         --outline-btn-color: rgba(100, 111, 135, 0.4);
         --box-shodow-sm: 0px 3px 6px 0px rgb(112 112 112 / 44%);
         --box-shadow-xsm: 0px 3px 26px 0px rgb(112 112 112 / 34%);
@@ -29,6 +32,7 @@
         --box-shadow-xlg: 0px 5px 26px 0px rgb(100 111 135 / 30%);
     }
 
+/* =============== custom gloabal class ============== */
     body {
         color: var(--gray-color);
         @apply text-base font-normal;

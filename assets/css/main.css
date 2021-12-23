@@ -1,9 +1,11 @@
 
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Open+Sans:400,600,700&display=swap");
+/*==================================================== */
 /* ========= core style sheet ============== */
+/*==================================================== */
 /*=========== Font faimly ================== */
 /* ========= import base files and custom style ============== */
-/* ! tailwindcss v3.0.5 | MIT License | https://tailwindcss.com */
+/*! tailwindcss v3.0.5 | MIT License | https://tailwindcss.com */
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
 2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
@@ -315,20 +317,22 @@ Ensure the default browser behavior of the `hidden` attribute.
 [hidden] {
   display: none;
 }
-/* ========= variables ============ */
+/* =============== variables ============== */
 :root {
         --faded-orange-color: #FE8464;
-        --gray-color: #646F87;
+        --grey-color: #646F87;
         --black-color: #293651;
+        --ruby-red-color: #ed1c24;
+        --dark-grey-color: #333333;
         --font-family-open-sans: "Open Sans", sans-serif;
         --font-family-montserrat-sans: "Montserrat", sans-serif;
-        --orage-linear-color: linear-gradient(to right, #fe8464 0%, #fe6e9a 50%, #fe8464 100%);
         --outline-btn-color: rgba(100, 111, 135, 0.4);
         --box-shodow-sm: 0px 3px 6px 0px rgb(112 112 112 / 44%);
         --box-shadow-xsm: 0px 3px 26px 0px rgb(112 112 112 / 34%);
         --box-shadow-lg: rgba(100, 111, 135, 0.4);
         --box-shadow-xlg: 0px 5px 26px 0px rgb(100 111 135 / 30%);
     }
+/* =============== custom gloabal class ============== */
 body {
         color: var(--gray-color);
         font-size: 1rem;
@@ -404,6 +408,19 @@ body {
 .left-0{
   left: 0px;
 }
+.order-1{
+  order: 1;
+}
+.my-1{
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+.ml-auto{
+  margin-left: auto;
+}
+.mr-5{
+  margin-right: 1.25rem;
+}
 .block{
   display: block;
 }
@@ -425,8 +442,17 @@ body {
 .hidden{
   display: none;
 }
+.h-0\.5{
+  height: 0.125rem;
+}
+.h-0{
+  height: 0px;
+}
 .w-full{
   width: 100%;
+}
+.w-8{
+  width: 2rem;
 }
 .resize{
   resize: both;
@@ -443,22 +469,25 @@ body {
 .justify-between{
   justify-content: space-between;
 }
+.whitespace-nowrap{
+  white-space: nowrap;
+}
 .rounded-full{
   border-radius: 9999px;
 }
 .border{
   border-width: 1px;
 }
-.bg-slate-100{
+.bg-black{
   --tw-bg-opacity: 1;
-  background-color: rgb(241 245 249 / var(--tw-bg-opacity));
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 .bg-slate-400{
   --tw-bg-opacity: 1;
   background-color: rgb(148 163 184 / var(--tw-bg-opacity));
 }
-.bg-relay{
-  background-image: var(--orage-linear-color);
+.bg-ruby-red{
+  background-color: var(--ruby-red-color);
 }
 .py-6{
   padding-top: 1.5rem;
@@ -483,13 +512,16 @@ body {
 .text-center{
   text-align: center;
 }
+.capitalize{
+  text-transform: capitalize;
+}
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
-.shadow-dark{
-  --tw-shadow: var( --box-shodow-sm);
-  --tw-shadow-colored: var( --box-shodow-sm);
+.shadow-xl{
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 .blur{
@@ -504,19 +536,22 @@ body {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
-.ease-linear{
-  transition-timing-function: linear;
+.duration-500{
+  transition-duration: 500ms;
+}
+.duration-2000{
+  transition-duration: 2000ms;
+}
+.ease-in-out{
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* ========== base style =============== */
-.hover\:shadow:hover{
-  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+.hover\:bg-dark-grey:hover{
+  background-color: var(--dark-grey-color);
 }
-.hover\:shadow-light:hover{
-  --tw-shadow: var(--box-shodow-xsm);
-  --tw-shadow-colored: var(--box-shodow-xsm);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+.hover\:shadow-inherit:hover{
+  --tw-shadow-color: inherit;
+  --tw-shadow: var(--tw-shadow-colored);
 }
 @media (min-width: 1024px){
   .lg\:static{
@@ -528,8 +563,20 @@ body {
   .lg\:mr-5{
     margin-right: 1.25rem;
   }
+  .lg\:mr-0{
+    margin-right: 0px;
+  }
+  .lg\:ml-0{
+    margin-left: 0px;
+  }
+  .lg\:block{
+    display: block;
+  }
   .lg\:flex{
     display: flex;
+  }
+  .lg\:hidden{
+    display: none;
   }
   .lg\:w-auto{
     width: auto;
