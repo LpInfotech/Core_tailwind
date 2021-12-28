@@ -14,8 +14,8 @@ module.exports = {
         'ruby-red': 'var(--ruby-red-color)',
         'dark-grey': 'var(--dark-grey-color)',
       },
-      transitionDuration: {
-        '2000': '2000ms',
+      maxHeight:{
+        'inherit': 'inherit',
       },
       container: {
         padding: {

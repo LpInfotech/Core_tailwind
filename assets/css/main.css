@@ -458,6 +458,9 @@ body {
 .h-0{
   height: 0px;
 }
+.max-h-0{
+  max-height: 0px;
+}
 .w-full{
   width: 100%;
 }
@@ -482,6 +485,9 @@ body {
 .justify-between{
   justify-content: space-between;
 }
+.overflow-hidden{
+  overflow: hidden;
+}
 .whitespace-nowrap{
   white-space: nowrap;
 }
@@ -502,8 +508,8 @@ body {
 .bg-ruby-red{
   background-color: var(--ruby-red-color);
 }
-.bg-\[url\(\'\.\/images\/header-shape\.svg\'\)\]{
-  background-image: url('./images/header-shape.svg');
+.bg-\[url\(\'\/assets\/images\/header-shape\.svg\'\)\]{
+  background-image: url('/assets/images/header-shape.svg');
 }
 .py-6{
   padding-top: 1.5rem;
@@ -591,17 +597,20 @@ body {
   .lg\:ml-0{
     margin-left: 0px;
   }
-  .lg\:block{
-    display: block;
-  }
   .lg\:flex{
     display: flex;
   }
   .lg\:hidden{
     display: none;
   }
+  .lg\:max-h-inherit{
+    max-height: inherit;
+  }
   .lg\:w-auto{
     width: auto;
+  }
+  .lg\:overflow-visible{
+    overflow: visible;
   }
   .lg\:bg-transparent{
     background-color: transparent;
